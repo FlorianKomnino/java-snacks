@@ -9,8 +9,8 @@ public class Snack10 {
 		int userRadius = sc.nextInt();
 		sc.close();
 		
-		double surface = userRadius * userRadius * 3.14;
-		double perimeter = userRadius * 2 * 3.14;
+		double surface = userRadius * userRadius * Math.PI;
+		double perimeter = userRadius * 2 * Math.PI;
 		
 		System.out.println("The circle's surface is :" + surface + "cm2");
 		System.out.println("The circle's perimeter is :" + perimeter + "cm");
