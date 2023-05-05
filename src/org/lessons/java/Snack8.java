@@ -29,9 +29,23 @@ public class Snack8 {
 				oddInd++;
 			}
 		}
+		
+		Integer[] strippedEvenArr = new Integer[evenInd];
+		Integer[] strippedOddArr = new Integer[oddInd];
+		
+		for (int i=0; i<evenInd; i++) {
+			int evenVal = evenArr[i];
+			strippedEvenArr[i] = evenVal;
+		}
+		
+		for (int i=0; i<oddInd; i++) {
+			int oddVal = oddArr[i];
+			strippedOddArr[i] = oddVal;
+		}
+		
 		System.out.println("The list of even numbers is:");
-		System.out.println(Arrays.asList(evenArr));
+		System.out.println(Arrays.asList(strippedEvenArr));
 		System.out.println("The list of odd numbers is:");
-		System.out.println(Arrays.asList(oddArr));
+		System.out.println(Arrays.asList(strippedOddArr));
 	}
 }
