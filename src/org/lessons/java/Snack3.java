@@ -15,10 +15,8 @@ public class Snack3 {
 		int sum = 0;
 		int listLng = numList.length;
 	
-		for (int i=0 ; i<listLng ; i++) {
-			if (i % 2 != 0) {
-				sum += numList[i];
-			}
+		for (int i=1 ; i<listLng ; i+=2) {
+			sum += numList[i];
 		}
 		
 		System.out.println(sum);
