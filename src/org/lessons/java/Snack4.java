@@ -15,6 +15,8 @@ public class Snack4 {
 		
 		int reverseIndex = strLng - 1;
 		
+		sc.close();
+		
 		for (int i=0 ; i<strLng ; i++) {
 			if (userInput.charAt(i) == userInput.charAt(reverseIndex)) {
 				isPalyndrome = true;
@@ -29,6 +31,6 @@ public class Snack4 {
 			System.out.println("Great! The given string is a palyndrome!!");
 		}
 		
-		sc.close();
+
 	}
 }
