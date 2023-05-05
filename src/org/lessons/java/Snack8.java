@@ -7,22 +7,31 @@ import java.util.Random;
 
 public class Snack8 {
 	public static void main(String[] args) {		
-		List<Integer> evenArr = new ArrayList<Integer>();
-		List<Integer> oddArr = new ArrayList<Integer>();
+//		List<Integer> evenArr = new ArrayList<Integer>();
+//		List<Integer> oddArr = new ArrayList<Integer>();
+		
+		Integer[] evenArr = new Integer[10];
+		Integer[] oddArr = new Integer[10];
+		
+		Integer oddInd = 0;
+		Integer evenInd = 0;
 		
 		Random randNum = new Random();
 		
 		for (int i=0 ; i<10 ; i++) {
-			int randInt = randNum.nextInt(100);
+			Integer randInt = randNum.nextInt(100);
 			
 			if (randInt % 2 == 0) {
-				evenArr.add(randInt);
+				evenArr[evenInd] = randInt;
+				evenInd++;
 			} else {
-				oddArr.add(randInt);
+				oddArr[oddInd] = randInt;
+				oddInd++;
 			}
 		}
-		
-		System.out.println(Arrays.asList("The list of even numbers is" + evenArr));
-		System.out.println(Arrays.asList("The list of odd numbers is" + oddArr));
+		System.out.println("The list of even numbers is:");
+		System.out.println(Arrays.asList(evenArr));
+		System.out.println("The list of odd numbers is:");
+		System.out.println(Arrays.asList(oddArr));
 	}
 }
